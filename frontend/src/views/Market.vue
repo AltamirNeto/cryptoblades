@@ -154,12 +154,8 @@
 
         <div class="row mt-3">
           <div class="col">
-            <div class="row">
-              <div class="col"></div>
-              <div class="col">
-                <input class="form-control search" type="text" v-model.trim="search" placeholder="Seller Address, NFT ID" />
-              </div>
-              <div class="col"></div>
+            <div class="d-flex justify-content-center align-items-center">
+                <input class="form-control search w-25" type="text" v-model.trim="search" placeholder="Seller Address, NFT ID" />
             </div>
 
             <div class="row buttons-row mt-3">
