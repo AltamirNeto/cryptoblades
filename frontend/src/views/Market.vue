@@ -163,54 +163,56 @@
             </div>
 
             <div class="row buttons-row mt-3">
-              <div class="col">
+              <div class="col-4 col-lg- mb-2 mb-lg-0">
                 <b-button
                   variant="primary"
                   :disabled="!search"
                   @click="searchListingsByNftId('character')"  class="gtag-link-others" tagname="search_character_id">Search Character ID</b-button>
               </div>
 
-              <div class="col">
+              <div class="col-4 col-lg-2 mb-2 mb-lg-0">
                 <b-button
                   variant="primary"
                   :disabled="!search"
                   @click="searchListingsByNftId('weapon')"  class="gtag-link-others" tagname="search_weapon_id">Search Weapon ID</b-button>
               </div>
 
-              <div class="col">
+              <div class="col-4 col-lg-2 mb-2 mb-lg-0">
                 <b-button
                   variant="primary"
                   :disabled="!search"
                   @click="searchListingsBySeller('weapon')"  class="gtag-link-others" tagname="weapons_seller">Weapons by Seller</b-button>
               </div>
 
-              <div class="col">
+              <div class="col-4 col-lg-2">
                 <b-button
                   variant="primary"
                   :disabled="!search"
                   @click="searchListingsBySeller('character')"  class="gtag-link-others" tagname="characters_seller">Characters by Seller</b-button>
               </div>
 
-              <div class="col">
+              <div class="col-4 col-lg-2">
                 <b-button
                   variant="primary"
                   @click="searchOwnListings('weapon')"  class="gtag-link-others" tagname="search_own_weapons">Search My Weapons</b-button>
               </div>
 
-              <div class="col">
+              <div class="col-4 col-lg-2">
                 <b-button
                   variant="primary"
                   @click="searchOwnListings('character')"  class="gtag-link-others" tagname="search_own_characters">Search My Characters</b-button>
               </div>
-
-              <div class="col">
+            </div>
+            
+            <div class="d-flex justify-content-center">
+             <div class="mx-5">
                 <b-button
                   variant="primary"
                   v-if="ownListedNftSelected"
                   @click="showListingSetupModal(true)" class="gtag-link-others" tagname="change_price">Change Price</b-button>
               </div>
 
-              <div class="col">
+              <div class="mx-5">
                 <b-button
                   variant="primary"
                   v-if="ownListedNftSelected"
